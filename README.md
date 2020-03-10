@@ -38,4 +38,56 @@ Izhod:
 8
 ```
 
-<!-- ## Rešitev -->
+## Rešitev
+
+### Vzpostavitev
+Rešitev je napisana v programskem jeziku Python. Zaženemo jo z ukazon
+
+```bash
+python solution.py vhod.txt
+```
+
+V primeru, da ne podamo argumenta ali vnesemo napačno ime datoteke, nam rešitev vrne napako.
+
+```bash
+$ python solution.py
+Vhodna datoteka ni bila podana.
+Delovanje: python solution.py <vhod.txt>
+
+$ python solution.py ni_vhodov.txt
+Vhodna datoteka "ni_vhodov.txt" ni bila najdena.
+```
+
+
+### Algoritem
+Algoritem najprej z matematično formulo najde maksimum pikslov, ki jih lahko zavzame ena črka.
+Nato z uporabo bisekcije poišče rezultat. 
+Natančnejši opis delovanja najdemo v izvorni kodi
+([solution.py](https://github.com/zanozbot/mojedelo-virtualni-hekaton-2020/blob/master/solution.py)).
+
+### Primer delovanja programa
+```
+Vhod:
+27 15 May the Force be with you
+10 40 Legen wait-for-it dary, legendary
+420 100 You want the truth? You can't handle the truth
+65 65 Houston, we have a problem
+345 160 My mama always said life was like a box of chocolates. You never know what you're gonna get
+230 130 You know nothing, Jon Snow
+14 10 Dobby is free
+15 80 Say 'hello' to my little friend!
+100 15 Live long and prosper
+23 2 Bazinga
+
+Izhod:
+3
+0
+25
+8
+22
+26
+2
+2
+7
+2
+```

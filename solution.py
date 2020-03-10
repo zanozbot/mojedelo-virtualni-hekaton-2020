@@ -1,6 +1,5 @@
 import math
 import sys
-import re
 
 def get_longest_word(words):
     """Vrne najdaljso besedo iz seznama besed words"""    
@@ -93,5 +92,6 @@ try:
             print(solution)
 
 except IndexError:
-    print('Program zagnan brez vhodne datoteke.\nDelovanje: python solution.py <vhod.txt>')
-    sys.exit()
+    print('Vhodna datoteka ni bila podana.\nDelovanje: python solution.py <vhod.txt>')
+except IOError:
+    print('Vhodna datoteka "{}" ni bila najdena.'.format(filename))
