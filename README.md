@@ -79,13 +79,29 @@ Vhod:
 100 15 Live long and prosper
 23 2 Bazinga
 
-Izhod:
+Izhod, kjer upoštevamo presledek kot prvi znak v novi vrstici:
+$ python solution.py vhodi.txt True
+
 3
 0
 25
 8
 22
 26
+2
+2
+7
+2
+
+Izhod, kjer ne upoštevamo presledka kot prvi znak v novi vrstici:
+$ python solution.py vhodi.txt False
+
+3
+0
+26
+8
+22
+28
 2
 2
 7
