@@ -52,7 +52,9 @@ V primeru, da ne podamo argumenta ali vnesemo napačno ime datoteke, nam rešite
 ```bash
 $ python solution.py
 Vhodna datoteka ni bila podana.
-Delovanje: python solution.py <vhod.txt>
+Delovanje: python solution.py <vhod.txt> <zacni_novo_vrstico_s_presledkom>
+<vhod.txt> - Ime datoteke z vhodi
+<zacni_novo_vrstico_s_presledkom> - False ali True
 
 $ python solution.py ni_vhodov.txt
 Vhodna datoteka "ni_vhodov.txt" ni bila najdena.
