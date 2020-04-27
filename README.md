@@ -1,5 +1,7 @@
 # MojeDelo Virtual Hackathon Entry
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Maximize the number of pixels a single character of input text can occupy on the given screen size without splitting any words.
 
 ## Instructions
